@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\WebOptimizer.LESS.xml</DocumentationFile>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageTags>LESS, bundle, minify, css, asp.net core</PackageTags>
+        <Version>1.0.0-beta</Version>
+        <Authors>LigerShark</Authors>
+        <Company>LigerShark</Company>
+        <Description>Compiles LESS files for the LigerShark.WebOptimizer.Core system.</Description>
+        <Copyright>Copyright © LigerShark</Copyright>
+        <PackageId>LigerShark.WebOptimizer.LESS</PackageId>
+        <Product>LigerShark.WebOptimizer.LESS</Product>
+        <PackageIconUrl>https://raw.githubusercontent.com/ligershark/WebOptimizer/master/art/logo64x64.png</PackageIconUrl>
+        <PackageProjectUrl>https://github.com/ligershark/WebOptimizer.Less</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/ligershark/WebOptimizer.Less/blob/master/LICENSE.txt</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/ligershark/WebOptimizer.Less</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="node_files.zip" />
+        <EmbeddedResource Include="node_files.zip" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="LigerShark.WebOptimizer.NodeServices" Version="1.0.3-beta" />
+        <PackageReference Include="Microsoft.AspNetCore.NodeServices" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>
