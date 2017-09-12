@@ -1,6 +1,6 @@
 # A LESS compiler for ASP.NET Core
 
-[![Build status](https://ci.appveyor.com/api/projects/status/h7vn1gsn7139r74e?svg=true)](https://ci.appveyor.com/project/madskristensen/weboptimizer-typescript)
+[![Build status](https://ci.appveyor.com/api/projects/status/dtkck6ymi5rjykln?svg=true)](https://ci.appveyor.com/project/madskristensen/weboptimizer-less)
 [![NuGet](https://img.shields.io/nuget/v/LigerShark.WebOptimizer.LESS.svg)](https://nuget.org/packages/LigerShark.WebOptimizer.LESS/)
 
 This package compiles TypeScript, ES6 and JSX files into ES5 by hooking into the [LigerShark.WebOptimizer](https://github.com/ligershark/WebOptimizer) pipeline.
