@@ -21,6 +21,6 @@ Or if you just want to parse specific LESS files, do this:
 ```c#
 services.AddWebOptimizer(pipeline =>
 {
-    pipeline.CompileLessFiles("/path/file1.less", "/path/file2.less");
+    pipeline.CompileLessFiles("/path/a.less", "/path/b.less");
 });
 ```
