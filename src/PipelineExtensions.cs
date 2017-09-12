@@ -5,22 +5,21 @@ using WebOptimizer.Less;
 namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
-    /// Extensions methods for registrating the Sass compiler on the Asset Pipeline.
+    /// Extensions methods for registrating the Less compiler on the Asset Pipeline.
     /// </summary>
-    public static class TypeScriptPipelineExtensions
+    public static class LessPipelineExtensions
     {
         /// <summary>
-        /// Compile TypeScript files on the asset pipeline.
+        /// Compile LESS files on the asset pipeline.
         /// </summary>
         public static IAsset CompileLess(this IAsset asset)
         {
             asset.Processors.Add(new LessProcessor());
-            asset.Pipeline?.ServiceCollection?.AddNodeServices();
             return asset;
         }
 
         /// <summary>
-        /// Compile TypeScript files on the asset pipeline.
+        /// Compile LESS files on the asset pipeline.
         /// </summary>
         public static IEnumerable<IAsset> CompileLess(this IEnumerable<IAsset> assets)
         {
@@ -49,7 +48,7 @@ namespace Microsoft.Extensions.DependencyInjection
         }
 
         /// <summary>
-        /// Compiles TypeScript files into HTML and makes them servable in the browser.
+        /// Compiles LESS files into CSS and makes them servable in the browser.
         /// </summary>
         /// <param name="pipeline">The asset pipeline.</param>
         public static IEnumerable<IAsset> CompileLessFiles(this IAssetPipeline pipeline)
@@ -58,7 +57,7 @@ namespace Microsoft.Extensions.DependencyInjection
         }
 
         /// <summary>
-        /// Compiles the specified TypeScript files into JavaScript (ES5) and makes them servable in the browser.
+        /// Compiles the specified LESS files into CSS and makes them servable in the browser.
         /// </summary>
         /// <param name="pipeline">The pipeline object.</param>
         /// <param name="sourceFiles">A list of relative file names of the sources to compile.</param>
