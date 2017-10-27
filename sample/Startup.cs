@@ -14,6 +14,7 @@ namespace Sample
             services.AddWebOptimizer(pipeline =>
             {
                 pipeline.CompileLessFiles();
+                pipeline.AddLessBundle("foo.css", "wwwroot/*.less").UseContentRoot();
             });
         }
 
