@@ -16,7 +16,16 @@
         <PackageProjectUrl>https://github.com/ligershark/WebOptimizer.Less</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/ligershark/WebOptimizer.Less/blob/master/LICENSE.txt</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/ligershark/WebOptimizer.Less</RepositoryUrl>
-    </PropertyGroup>
+    
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
     <ItemGroup>
         <None Remove="node_files.zip" />
